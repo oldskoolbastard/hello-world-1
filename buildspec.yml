@@ -16,8 +16,8 @@ phases:
       
   #post_build:
     #commands:
-      - mvn package
-      - mv target/HELLO-WORLD-1.jar HELLO-WORLD-1.jar
+      - #mvn package
+      - #mv target/HELLO-WORLD-1.jar HELLO-WORLD-1.jar
 artifacts:
   files:
     - target/HELLO-WORLD-1.jar
