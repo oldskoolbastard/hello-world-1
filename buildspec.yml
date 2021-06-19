@@ -1,0 +1,14 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      java: corretto11
+  post_build:
+    commands:
+      - mvn package
+      - mv target/HELLO-WORLD-1.war HELLO-WORLD-1.war
+artifacts:
+  files:
+    - HELLO-WORLD-1.war
+    - .ebextensions/**/*
