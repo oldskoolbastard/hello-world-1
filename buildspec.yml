@@ -14,11 +14,11 @@ phases:
       - echo Build started on `javaweb`
       - mvn install
       
-  post_build:
-    commands:
+  #post_build:
+    #commands:
       - mvn package
       - mv target/HELLO-WORLD-1.jar HELLO-WORLD-1.jar
 artifacts:
   files:
-    - HELLO-WORLD-1.jar
+    - target/HELLO-WORLD-1.jar
     - .ebextensions/**/*
