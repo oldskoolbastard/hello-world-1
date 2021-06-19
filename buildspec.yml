@@ -4,6 +4,8 @@ phases:
   install:
     runtime-versions:
       java: corretto11
+      commands:
+        - mvn install
   post_build:
     commands:
       - mvn package
