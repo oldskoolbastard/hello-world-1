@@ -17,8 +17,8 @@ phases:
   post_build:
     commands:
       - mvn package
-      - mv target/HELLO-WORLD-1.war HELLO-WORLD-1.war
+      - mv target/HELLO-WORLD-1.jar HELLO-WORLD-1.jar
 artifacts:
   files:
-    - HELLO-WORLD-1.war
+    - HELLO-WORLD-1.jar
     - .ebextensions/**/*
